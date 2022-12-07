@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+ /* font-size: 62.5%; /*1 REM = 10 pixeles */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Globales*/
+
+p{
+  font-size: 20px;
+}
+
+.justy{
+  text-align: justify;
+}
+
+.cartasLink{
+  text-decoration: none;
+  color: black;
+
+}
+
+
+/*Cuerpo y footer*/
+
+  body {
+   font-family: 'Montserrat', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .navbar{
+    background-color: #000000;
+  }
+
+/*Seccion Hero*/
+
+  .hero {
+  background-image: url(../img/navidad6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: bottom center;*/
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -4;
+}
+
+.hero h1 {
+     color:#ffffff;
+     font-size: 50px;
+     font-style: normal;
+   }
+
+.imgRedonda {
+    max-width: 100%;
+    border-radius: 25% 10%;
+    justify-content: center;
+    align-content: center;
+    display:block;
+    margin:auto;
+    padding: 1em;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px 40px;
+}
+
+/*Seccion Nieve*/
+i {
+    position: fixed;
+    background: #fff;
+    border-radius: 80%;
+    box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
+    animation: nieve linear infinite;
+}
+
+@keyframes nieve {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: calc(100vh + 50px);
+    }
+}
+
+
+/*Cards*/
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
