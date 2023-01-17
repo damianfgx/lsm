@@ -1,130 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
- /* font-size: 62.5%; /*1 REM = 10 pixeles */
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+
+nav{
+	background:#000000;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-/*Globales*/
-
-p{
-  font-size: 20px;
+footer{
+  background: #A9AF7E;
 }
 
 .justy{
   text-align: justify;
 }
 
-.cartasLink{
-  text-decoration: none;
-  color: black;
+/* Start: Google Maps Responsive */
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+/* End: Google Maps Responsive */
 
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
 
-/*Cuerpo y footer*/
+#nosotros{
+  border-radius: 30px;
+}
 
-  body {
-   font-family: 'Montserrat', sans-serif;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    overflow: auto;
-  }
+#nosotros img{
+  border-radius: 25% 10%;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+/* WORKS SECTION STYLES */
 
-  .navbar{
-    background-color: #000000;
-  }
+.sectionWorks{
+  padding: 40px 0;
+  width: 100%;
+}
 
-/*Seccion Hero*/
-
-  .hero {
-  background-image: url(../img/navidad6.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-position: bottom center;*/
-  height: 100vh;
-  color: #fff;
+.containerWorks{
+  width: 80%;
   display: flex;
-  justify-content: center;
-  background-position: center center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding-top: 55px;
+}
+
+.contWorks{
+  flex-basis: 25%;
   text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
-  z-index: -4;
 }
 
-.hero h1 {
-     color:#ffffff;
-     font-size: 50px;
-     font-style: normal;
-   }
-
-.imgRedonda {
-    max-width: 100%;
-    border-radius: 25% 10%;
-    justify-content: center;
-    align-content: center;
-    display:block;
-    margin:auto;
-    padding: 1em;
+.contWorks img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
 }
 
-.box {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+.contWorks:hover img{
+  transform: scale(1.1);
+}
+
+.imgInfo{
+  width: 100%;
+  height: 0%;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.8), rgb(16, 16, 16));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
   text-align: center;
-  line-height: 1;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  max-width: 100%;
-  max-height: 100%;
-  padding: 20px 40px;
+  transition: 0.7s;
 }
 
-/*Seccion Nieve*/
-i {
-    position: fixed;
-    background: #fff;
-    border-radius: 80%;
-    box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
-    animation: nieve linear infinite;
+.imgInfo h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-@keyframes nieve {
-    0% {
-        top: -10px;
-    }
-    100% {
-        top: calc(100vh + 50px);
-    }
+.imgInfo a{
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: center;
+  transition: .7s ease-in-out;
 }
 
+.imgInfo:hover a{
+  color: #DC3535;
+}
 
-/*Cards*/
-.map-container{
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
+.contWorks:hover .imgInfo{
+  height: 100%;
 }
-.map-container iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
+
+/* Works Section Media Queries */
+@media screen and (max-width: 770px){
+  #sectionWorks{
+      padding-bottom: 0;
+  }
+  .sectionWorks h1{
+      margin-bottom: 60px;
+      font-size: 45px;
+  }
+  .containerWorks{
+      padding-top: 0;
+  }
+  .contWorks{
+      flex-basis: 100%;
+      margin-bottom: 25px;
+  }
+  .imgInfo{
+      font-size: 15px;
+  }
 }
+
+.galeria{
+  font-size: 50px;
+}
+

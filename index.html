@@ -1,159 +1,244 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="La Luna Sul Mare" content="LSM" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  <link rel="icon" href="img/lsm.png" />
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Luna Sul Mare</title>
- </head>
- <body>
-  <!-- Navbar  Section -->
-  <header id="header" class="navbar fixed-top nav navbar-expand-lg navbar-dark">
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="32x32">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar  navbar-expand-lg sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#hero">La Luna Sul Mare</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <nav class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#nosotros">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#carta">Nuestra Carta</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-
-    <span class="navbar-text activate">
-      "Mangiare per vivere e non vivere per mangiare"
-      <span>-LSM</span>
-    </span>
-  </header>
+      <a class="fw-bold navbar-brand text-white" href="#">LSM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
 
 
-  <!-- Hero Section -->
-  <div id="hero" class="hero">
-    <div class="contain">
-      <div class="box">
-        <h1 class="titulo"><span class="typed"></span></h1>
+      <div class="collapse navbar-collapse text-black" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#nosotros">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#carta">Nuestra Carta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contacto">Contacto</a>
+          </li>
+
+          <li class="nav-item dropdown  pull-right">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Novedades
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Nuevos Platillos <span class="badge text-bg-success">New</span>
+                </a></li>
+              <li><a class="dropdown-item" href="galeria.html">Nuestra Galeria <span
+                    class="badge text-bg-success">New</span></a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
+
+  <main>
 
 
-  <!--About us -->
-  
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
 
-  <!-- Aboutme Section-->
-  <section id="nosotros" class="sectionLetter">
-    <div class="container-fluid">
-      <div class="row" id="aboutme">
-        <div class="col-sm-5"><img src="img/nosotros.jpg" class="imgRedonda img-fluid"></div>
-        <div class="col-sm-7"><br>
-          <h1 class="text-center"><strong>Sobre Nosotros</strong></h1>
-          <p class="justy"> Pico de gallo, on the side please. You see, the refried beans are really just the adhesive necessary to apply the soft tortilla to the hard taco shell. Give me all the tacos, immediately. Tacos, again? This will be 5 times this week and it’s only Tuesday. Fish tacos: lettuce or cabbage, pico de gallo, avocado and a sour cream or citrus/mayonnaise sauce, all placed on top of a corn or flour tortilla.</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="img/febrero.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase">Feliz 14 de Febrero <i class="bi bi-arrow-through-heart-fill"></i></p>
+            <h1 class="display-1 fw-bolder text-capitalize">La Luna Sul Mare</h1>
+            <a class="btn btn-success px-4 py-2 fs-5 mt-5" href="img/mapa.png" target="_blank">Mapa <i
+                class="bi bi-map-fill"></i></a>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
 
-
-  <!--Menu-->
-  <h1 class="text-center"><strong>Nuestro Carta</strong></h1>
-  <section id="carta" class="bg-light">
-    <div class="container">
-      <div class="row g-0">
-        <div class="col-md-3">
-          <div class="lc-block ">
-            <img src="img/producto1.jpg" class="card-img-top" alt="...">
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-md-3 d-flex align-items-center justify-content-center px-2 mb-4 mb-md-0">
-          <div class="lc-block">
-            <div editable="rich">
-              <a class="cartasLink" href="alimentos.html"><h2>Alimentos</h2></a>
-            </div>
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-md-3">
-          <div class="lc-block ">
-            <img src="img/producto5.jpg" class="card-img-top" alt="...">
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-md-3 d-flex align-items-center justify-content-center px-2 mb-4 mb-md-0">
-          <div class="lc-block">
-            <div editable="rich">
-             <a class="cartasLink" href="postres.html"> <h2>Postres</h2></a>
-            </div>
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-      </div>
-      <div class="row g-0 flex-row-reverse flex-md-row">
-        <div class="col-md-3 order-2 order-md-1 d-flex align-items-center justify-content-center px-2">
-          <div class="lc-block">
-            <div editable="rich">
-             <a class="cartasLink" href="cocteleria.html"> <h2>Cocteleria</h2></a>
-            </div>
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-md-3 order-1 order-md-2 mb-4 mb-md-0">
-          <div class="lc-block ">
-            <img src="img/cocteleria.jpg" class="card-img-top" alt="...">
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-md-3 order-4 order-md-3 d-flex align-items-center justify-content-center px-2 mb-4 mb-md-0">
-          <div class="lc-block">
-            <div editable="rich">
-              <a class="cartasLink" href="vinos.html"><h2>Vinos y licores</h2></a>
-            </div>
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-        <div class="col-md-3 order-3 order-md-4">
-          <div class="lc-block ">
-            <img src="img/vinos.jpg" class="card-img-top" alt="...">
-          </div><!-- /lc-block -->
-        </div><!-- /col -->
-      </div>
-    </div>
-  </section><br>
-  <!--Contacto-->
-
-  <section id="contacto">
-    <h1 class="text-center"><strong>Contacto</strong></h1>
-
-    <div class="container my-4">
-        <hr>
-  <!--Google map-->
-        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.095813469123!2d-98.2934562856215!3d19.191017053335276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfdab4b12c955d%3A0xea0d731c4f6cdfc3!2sLa%20Luna%20Sul%20Mare!5e0!3m2!1ses-419!2smx!4v1670429731335!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="carousel-item c-item">
+          <img src="img/slider2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="display-1 fw-bolder text-capitalize">Nuestra pasta se hace en casa.</p>
+            <p class="text-uppercase fs-3 mt-5">Artesanal y fresca al plato.</p>
+          </div>
         </div>
-        <!--Google Maps-->
+
+        <div class="carousel-item c-item">
+          <img src="img/slider3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">Conoce nuestra</p>
+            <p class="display-1 fw-bolder text-capitalize">Nueva Cocteleria</p>
+            <button class="btn btn-success   px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Cocteleria <span class="badge badge-light">New</span></button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img src="img/slider4.jpg" class="d-block w-100 c-img" alt="Slide 4">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">contamos con una gran variedad de platillos para deleitar tu paladar.
+            </p>
+            <p class="display-1 fw-bolder text-capitalize">Desayunos</p>
+            <button class="btn btn-success px-4 py-2 fs-5 mt-5 text-white" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Desayunos</button>
+          </div>
+        </div>
+
+
+
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <br>
+    <section id="nosotros">
+      <div class="container-fluid">
+        <div class="row" id="aboutme">
+          <div class="col-sm-5"><img src="img/nosotros.jpg" class="img-fluid"></div>
+          <div class="col-sm-7">
+            <h1 class="text-center text-capitalize" align="justify">Sobre Nosotros</h1>
+            <p class="justy">La cocina italiana está incluida dentro de las denominadas gastronomías mediterráneas y es tan imitada como practicada en todo el mundo.</p>
+            <p class="justy">Nosotros traemos todos los sabores genuinos desde el pais europeo, es una cocina donde coexisten los abundantes aromas y los sabores del mediterráneo. Una bonita forma de conocerlo es a través del restaurante <b>La Luna Sul Mare</b> y de sus productos hechos solo con la mejor calidad y frescura.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="bg-dark text-center text-white">
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © LSM 2022
-      </div>
-      <!-- Copyright -->
-    </footer>
+    <section id="carta">
+      <!-- Works Section -->
+      <section id="projects" class="sectionWorks sectionLetter ">
+        <h1 class="text-center text-capitalize">Nuestra carta</h1>
+        <div class="containerWorks">
+          <div class="contWorks">
+            <img src="img/cocteleria.jpg" alt="Cocteleria">
+            <div class="imgInfo">
+              <h3 class="text-capitalize">Cocteleria</h3>
+              <p>Nuestros cocteles italianos cuentan con una gran variedad y excelencia, son perfectos para disfrutar en
+                La Luna Sul Mare y viajar trago a trago hasta el país europeo.</p>
+              <a href=""><i class="bi bi-info-circle-fill"></i></a>
+            </div>
+          </div>
+          <div class="contWorks">
+            <img src="img/comida.jpg" alt="Comida y postres">
+            <div class="imgInfo">
+              <h3 class="text-capitalize">Comida y postres</h3>
+              <p>Nuestra gastronomía se caracteriza por sus elaboraciones con abundantes verduras, frutas, carnes,
+                pescados, pastas y panes.</p>
+              <a href=""><i class="bi bi-info-circle-fill"></i></a>
+            </div>
+          </div>
+          <div class="contWorks">
+            <img src="img/vinos1.jpg" alt="Vinos y licores LSM">
+            <div class="imgInfo">
+              <h3 class="text-capitalize">Vinos y Licores</h3>
+              <p>Italia es la cuna de los admirado s vinos de Barolo y de la Toscana, la tierra del lambrusco, del
+                prosecco y de mucho más. Conozcan con cuáles empezar.</p>
+              <a href="vinos.html"><i class="bi bi-info-circle-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <script src="js/nieve.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-  </body>
+    </section>
+
+    <br><br>
+
+    <section id="contacto">
+      <h1 class="text-center text-capitalize">¿Dondé nos puedes encontrar?</h1>
+      <div class="container">
+        <p class="text-center">Nos encontramos en Val'Quirico, Tlaxcala <b>Plaza central Santeagueda, 90733 Tlaxcala</b></p>
+      </div>
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.095813469123!2d-98.2934562856215!3d19.191017053335276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfdab4b12c955d%3A0xea0d731c4f6cdfc3!2sLa%20Luna%20Sul%20Mare!5e0!3m2!1ses-419!2smx!4v1673557385341!5m2!1ses-419!2smx"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><br>
+      <div class="container">
+        <p>Tambien nos puedes encontrar en Puebla Cholula <b>Calle 6 Nte. 5, San Miguel, Barrio de San Miguel Tianguisnahuitl, 72760 Cholula, Pue.</b></p>
+      </div>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0708670560016!2d-98.30476948562342!3d19.060621557409977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7f69ceb3923%3A0xd6dd00e2721bccdf!2sLa%20Luna%20Sul%20Mare!5e0!3m2!1ses-419!2smx!4v1673982098106!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><br>
+      
+
+
+
+    </section>
+  </main>
+
+  <footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="text-white container">
+      <!-- Section: Social media -->
+      <section class="mb-1">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://es-la.facebook.com/lalunasulmare/"
+          role="button" data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-white m-1" href="mailto:facturas.lsm7@gmail.com" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.instagram.com/lalunasulmare/"
+          role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i></a>
+
+        <!-- WhatsApp -->
+        <a class="btn btn-link btn-floating btn-lg text-white m-1" href="tel:222-290-3909" role="button"
+          data-mdb-ripple-color="dark"><i class="bi bi-whatsapp"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <a>&copy;
+        <script>document.write(new Date().getFullYear())</script> Made with love by LSM
+      </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
