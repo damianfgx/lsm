@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+  <!--Etiquetas meta-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="La Luna Sul Mare" />
+  <meta name="description" content="Restaurante La Luna Sul Mare, comida, vinos, cocteleria" />
   <title>La Luna Sul Mare</title>
   <link rel="icon" href="img/logo.png" type="image/png" sizes="32x32">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,48 +18,51 @@
 </head>
 
 <body>
-  <nav class="navbar  navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-      <a class="fw-bold navbar-brand text-white" href="index.html">LSM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white"></span>
-      </button>
 
-
-      <div class="collapse navbar-collapse text-black" id="navbarNavDropdown">
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#nosotros">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#carta">Nuestra Carta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contacto">Contacto</a>
-          </li>
-
-          <li class="nav-item dropdown  pull-right">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Novedades
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Nuevos Platillos <span class="badge text-bg-success">New</span>
-                </a></li>
-              <li><a class="dropdown-item" href="galeria.html">Nuestra Galeria <span
-                    class="badge text-bg-success">New</span></a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navbar  Section -->
+    <header id="header" class="navbar  navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="fw-bold navbar-brand text-white" href="index.html">LSM</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <nav class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-current="page" href="#nosotros">¿Quienes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#carta">Nuestra Carta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item dropdown  pull-right">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Novedades
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nuevos Platillos <span class="badge text-bg-success">New</span>
+                  </a></li>
+                <li><a class="dropdown-item" href="galeria.html">Nuestra Galeria <span
+                      class="badge text-bg-success">New</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+  <!--Frase para la Navbar-->
+        <span class="navbar-text activate">
+          "La mejor comida de Italia para tu mesa"
+        </span>
+    </header>
 
   <main>
-
-    <h1 class="text-center galeria">Pasa tus mejores momentos con nosotros</h1>
-
+<!--Titulo de la pagina-->
+    <p class="text-center fs-1 fst-italic">Pasa tus mejores momentos con nosotros. <i class="bi bi-chat-square-heart-fill"></i></p>
+<!--Galeria de imagenes LSM-->
     <div class="row m-5 materialboxed">
       <div class="col-lg-4 mb-4">
         <a href="img/1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
@@ -124,12 +130,9 @@
       </div>
 
     </div>
-
-
-
-
   </main>
 
+  <!--Footer-->
   <footer class="text-center text-white">
     <!-- Grid container -->
     <div class="text-white container">
@@ -166,7 +169,7 @@
 
 
 
-
+<!--Scripts utilizados-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>

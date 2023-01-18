@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+  <!--Etiquetas meta-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="La Luna Sul Mare" />
+  <meta name="description" content="Restaurante La Luna Sul Mare, comida, vinos, cocteleria" />
   <title>La Luna Sul Mare</title>
   <link rel="icon" href="img/logo.png" type="image/png" sizes="32x32">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,31 +18,29 @@
 </head>
 
 <body>
-
-  <nav class="navbar  navbar-expand-lg sticky-top">
+  <!-- Navbar  Section -->
+  <header id="header" class="navbar  navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <a class="fw-bold navbar-brand text-white" href="index.html">LSM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white"></span>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
-
-      <div class="collapse navbar-collapse text-black" id="navbarNavDropdown">
+      <nav class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#nosotros">Sobre Nosotros</a>
+            <a class="nav-link" aria-current="page" href="#nosotros">¿Quienes somos?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#carta">Nuestra Carta</a>
+            <a class="nav-link" href="#carta">Nuestra Carta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#contacto">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
-
           <li class="nav-item dropdown  pull-right">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Novedades
             </a>
             <ul class="dropdown-menu">
@@ -50,14 +51,18 @@
             </ul>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
+      </nav>
 
+      <span class="navbar-text activate">
+        "La mejor comida de Italia para tu mesa"
+      </span>
+  </header>
+
+  <!-- Main  Section -->
   <main>
-
-
+    <!--Carrusel-->
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <!--Indicadores del carrusel-->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -76,7 +81,6 @@
                 class="bi bi-map-fill"></i></a>
           </div>
         </div>
-
 
         <div class="carousel-item c-item">
           <img src="img/slider2.jpg" class="d-block w-100 c-img" alt="Slide 2">
@@ -97,16 +101,18 @@
         </div>
 
         <div class="carousel-item c-item">
-          <img src="img/slider4.jpg" class="d-block w-100 c-img" alt="Slide 4">
+          <img src="img/Slider6.jpg" class="d-block w-100 c-img" alt="Slide 4">
           <div class="carousel-caption top-0 mt-4">
-            <p class="text-uppercase fs-3 mt-5">contamos con una gran variedad de platillos para deleitar tu paladar.
+            <p class="text-uppercase fs-3 mt-5">¡Visitanos!
             </p>
-            <p class="display-1 fw-bolder text-capitalize">Desayunos</p>
+            <p class="display-1 fw-bolder text-capitalize">Tenemos desayunos</p>
             <button class="btn btn-success px-4 py-2 fs-5 mt-5 text-white" data-bs-toggle="modal"
               data-bs-target="#booking-modal">Desayunos</button>
           </div>
         </div>
       </div>
+
+      <!--Buttons para dar siguiente y atras en el carrusel-->
       <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -115,71 +121,69 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div><br>
 
-
-    <br>
+    <!--Section de Nosotros LSM-->
     <section id="nosotros">
       <div class="container-fluid">
         <div class="row" id="aboutme">
-          
           <div class="col-sm-7">
-            <h1 class="text-center text-capitalize" align="justify">Sobre Nosotros</h1>
-            <p class="justy">La cocina italiana está incluida dentro de las denominadas gastronomías mediterráneas y es
-              tan imitada como practicada en todo el mundo.</p>
+            <h1 class="text-center text-capitalize" align="justify">¿Quiénes somos?</h1>
             <p class="justy">Nosotros traemos todos los sabores genuinos desde el pais europeo, es una cocina donde
               coexisten los abundantes aromas y los sabores del mediterráneo. Una bonita forma de conocerlo es a través
               del restaurante <b>La Luna Sul Mare</b> y de sus productos hechos solo con la mejor calidad y frescura.
             </p>
+            <p class="justy">La cocina italiana está incluida dentro de las denominadas gastronomías mediterráneas y es
+              tan imitada como practicada en todo el mundo pero solos nosotros tenemos el sabor de la pequeña Italia.</p>
+            
           </div>
           <div class="col-sm-5"><img src="img/nosotros.jpg" class="img-fluid"></div>
         </div>
       </div>
     </section>
 
-    <section id="carta">
-      <!-- Works Section -->
-      <section id="projects" class="sectionWorks sectionLetter ">
-        <h1 class="text-center text-capitalize">Nuestra carta</h1>
-        <div class="containerWorks">
-          <div class="contWorks">
-            <img src="img/cocteleria.jpg" alt="Cocteleria">
-            <div class="imgInfo">
-              <h3 class="text-capitalize">Cocteleria</h3>
-              <p>Nuestros cocteles italianos cuentan con una gran variedad y excelencia, son perfectos para disfrutar en
-                La Luna Sul Mare y viajar trago a trago hasta el país europeo.</p>
-              <a href=""><i class="bi bi-info-circle-fill"></i></a>
-            </div>
-          </div>
-          <div class="contWorks">
-            <img src="img/comida.jpg" alt="Comida y postres">
-            <div class="imgInfo">
-              <h3 class="text-capitalize">Comida y postres</h3>
-              <p>Nuestra gastronomía se caracteriza por sus elaboraciones con abundantes verduras, frutas, carnes,
-                pescados, pastas y panes.</p>
-              <a href=""><i class="bi bi-info-circle-fill"></i></a>
-            </div>
-          </div>
-          <div class="contWorks">
-            <img src="img/vinos1.jpg" alt="Vinos y licores LSM">
-            <div class="imgInfo">
-              <h3 class="text-capitalize">Vinos y Licores</h3>
-              <p>Italia es la cuna de los admirados vinos de Barolo y de la Toscana, la tierra del lambrusco, del
-                prosecco y de mucho más. Conozcan con cuáles empezar.</p>
-              <a href="vinos.html"><i class="bi bi-info-circle-fill"></i></a>
-            </div>
+    <!--Section Carta LSM-->
+    <section id="carta" class="sectionWorks sectionLetter ">
+      <h1 class="text-center text-capitalize">Nuestra carta</h1>
+      <div class="containerWorks">
+        <div class="contWorks">
+          <img src="img/cocteleria.jpg" alt="Cocteleria">
+          <div class="imgInfo">
+            <h3 class="text-capitalize">Cocteleria</h3>
+            <p>Nuestros cocteles italianos cuentan con una gran variedad y excelencia, son perfectos para disfrutar en
+              La Luna Sul Mare y viajar trago a trago hasta el país europeo.</p>
+            <a href="cocteleria.html"><i class="bi bi-info-circle-fill"></i></a>
           </div>
         </div>
-      </section>
-
+        <div class="contWorks">
+          <img src="img/comida.jpg" alt="Comida y postres">
+          <div class="imgInfo">
+            <h3 class="text-capitalize">Comida y postres</h3>
+            <p>Nuestra gastronomía se caracteriza por sus elaboraciones con abundantes verduras, frutas, carnes,
+              pescados, pastas y panes.</p>
+            <a href=""><i class="bi bi-info-circle-fill"></i></a>
+          </div>
+        </div>
+        <div class="contWorks">
+          <img src="img/vinos1.jpg" alt="Vinos y licores LSM">
+          <div class="imgInfo">
+            <h3 class="text-capitalize">Vinos y Licores</h3>
+            <p>Italia es la cuna de los admirados vinos de Barolo y de la Toscana, la tierra del lambrusco, del
+              prosecco y de mucho más. Conozcan con cuáles empezar.</p>
+            <a href="vinos.html"><i class="bi bi-info-circle-fill"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!--Section de Contacto LSM-->
     <section id="contacto">
       <h1 class="text-center text-capitalize">¿Dondé nos puedes encontrar?</h1>
       <div class="container">
         <p class="text-center">Nos encontramos en Val'Quirico, Tlaxcala <b>Plaza central Santeagueda, 90733 Tlaxcala</b>
         </p>
       </div>
+      <!--Mapas-->
       <div class="map-responsive">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.095813469123!2d-98.2934562856215!3d19.191017053335276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfdab4b12c955d%3A0xea0d731c4f6cdfc3!2sLa%20Luna%20Sul%20Mare!5e0!3m2!1ses-419!2smx!4v1673557385341!5m2!1ses-419!2smx"
@@ -195,14 +199,10 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0708670560016!2d-98.30476948562342!3d19.060621557409977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7f69ceb3923%3A0xd6dd00e2721bccdf!2sLa%20Luna%20Sul%20Mare!5e0!3m2!1ses-419!2smx!4v1673982098106!5m2!1ses-419!2smx"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><br>
-
-
-
-
+      </div>
     </section>
   </main>
-
+<!--Footer-->
   <footer class="text-center text-white">
     <!-- Grid container -->
     <div class="text-white container">
@@ -211,7 +211,6 @@
         <!-- Facebook -->
         <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://es-la.facebook.com/lalunasulmare/"
           role="button" data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i></a>
-
         <!-- Google -->
         <a class="btn btn-link btn-floating btn-lg text-white m-1" href="mailto:facturas.lsm7@gmail.com" role="button"
           data-mdb-ripple-color="dark"><i class="bi bi-google"></i></a>
@@ -238,7 +237,7 @@
   </footer>
 
 
-
+<!--Scripts que se utilizan-->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

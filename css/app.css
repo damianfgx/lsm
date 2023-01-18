@@ -12,7 +12,7 @@ main {
     flex: 1 0 auto;
   }
 
-nav{
+#header{
 	background:#A9AF7E;
 }
 
@@ -157,7 +157,31 @@ footer{
   }
 }
 
-.galeria{
-  font-size: 50px;
+.hero {
+  background-image: url(../img/slider3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -4;
 }
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+  color: #333147;
+}
+
+.hero p{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color:#333147;
+}
+
 
